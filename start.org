@@ -5,7 +5,7 @@
 ⦿ *IMPORTANT KEYBINDINGS*
 |------------+---------------------+------------------------------------|
 | M-x        | [[elisp:(counsel-M-x)][counsel-M-x]]         | Prompt for Emacs programs          |
-| SPC .      | [[elisp:(counsel-find-file)][counsel-find-file]]   | Find a file                        |
+| SPC f      | [[elisp:(counsel-find-file)][counsel-find-file]]   | Find a file                        |
 | SPC f r    | [[elisp:(counsel-recentf)][counsel-recentf]]     | Find a recent file                 |
 | SPC d d    | [[elisp:(dired (getenv "HOME"))][dired]]               | Dired file manager                 |
 | SPC h r r  | [[elisp:(doom/reload)][doom/reload]]         | Reload Doom Emacs                  |

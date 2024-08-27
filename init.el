@@ -46,8 +46,7 @@
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
-       (tabs
-        +centaur-tabs)
+       tabs
        (treemacs
         +treemacs-git-mode)
 

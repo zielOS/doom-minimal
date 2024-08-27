@@ -1,5 +1,22 @@
+(setq doom-font (font-spec :family "JetBrains Mono" :size 17)
+      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 17)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 21))
+(after! doom-themes
+  (setq doom-themes-enable-bold t
+        doom-themes-enable-italic t))
+(custom-set-faces!
+  '(font-lock-comment-face :slant italic)
+  '(font-lock-keyword-face :slant italic))
+
 (map! :leader
       :desc "Open like spacemacs" "SPC" #'execute-extended-command)
+
+(use-package! doom-modeline
+  :config
+  (setq doom-modeline-persp-name t
+        doom-modeline-height 38
+        doom-modeline-time t
+        doom-modeline-time-icon t))
 
 (map! :leader
       :desc "Org babel tangle" "m B" #'org-babel-tangle)
@@ -99,3 +116,6 @@
                            :todo ("SOMEDAY" )
                            :order 90)
                           (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
+
+(setq doom-theme 'catppuccin
+      catppuccin-flavor 'macchiato)

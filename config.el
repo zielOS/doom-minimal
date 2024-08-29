@@ -11,12 +11,9 @@
 (map! :leader
       :desc "Open like spacemacs" "SPC" #'execute-extended-command)
 
-(use-package! doom-modeline
-  :config
-  (setq doom-modeline-persp-name t
-        doom-modeline-height 38
-        doom-modeline-time t
-        doom-modeline-time-icon t))
+(setq doom-modeline-persp-name t
+      doom-modeline-height 38
+      doom-modeline-time t)
 
 (map! :leader
       :desc "Org babel tangle" "m B" #'org-babel-tangle)
@@ -117,5 +114,15 @@
                            :order 90)
                           (:discard (:tag ("Chore" "Routine" "Daily")))))))))))
 
-(setq doom-theme 'catppuccin
-      catppuccin-flavor 'macchiato)
+;; Global settings (defaults)
+(setq doom-themes-enable-bold t
+      doom-themes-enable-italic t)
+(load-theme 'doom-palenight t)
+
+;; Enable custom neotree theme (all-the-icons must be installed!)
+(doom-themes-neotree-config)
+;; or for treemacs users
+(setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
+(doom-themes-treemacs-config)
+;; Corrects (and improves) org-mode's native fontification.
+(doom-themes-org-config)

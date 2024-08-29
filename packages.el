@@ -12,8 +12,6 @@
 (package! all-the-icons-completion)
 (package! all-the-icons-nerd-fonts)
 (package! org-super-agenda)
-(package! format-all)
-(package! catppuccin-theme)
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:

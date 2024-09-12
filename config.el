@@ -1,6 +1,8 @@
-(setq doom-font (font-spec :family "JetBrains Mono" :size 17)
-      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 17)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 21))
+(server-start)
+
+(setq doom-font (font-spec :family "JetBrains Mono" :size 25)
+      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 25)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 27))
 (after! doom-themes
   (setq doom-themes-enable-bold t
         doom-themes-enable-italic t))

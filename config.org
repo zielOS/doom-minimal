@@ -3,12 +3,18 @@
 #+DESCRIPTION: This configuration is minimal and need-only based.
 #+STARTUP: overview
 
+* Init
+
+#+begin_src emacs-lisp
+(server-start)
+#+end_src
+
 * Fonts
 
 #+BEGIN_SRC emacs-lisp
-(setq doom-font (font-spec :family "JetBrains Mono" :size 17)
-      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 17)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 21))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 25)
+      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 25)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 27))
 (after! doom-themes
   (setq doom-themes-enable-bold t
         doom-themes-enable-italic t))
@@ -72,6 +78,9 @@ I wrapped most of this block in (after! org).  Without this, my settings might b
              "DONE(d)"           ; Task has been completed
              "CANCELLED(c)" )))) ; Task has been cancelled
 #+END_SRC
+
+#+RESULTS:
+| sequence | TODO(t) | BLOG(b) | GYM(g) | PROJ(p) | VIDEO(v) | WAIT(w) |   |   | DONE(d) | CANCELLED(c) |
 
 ** org-super-agenda
 
